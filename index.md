@@ -12,9 +12,3 @@ Blog记录生活的色彩、技术的感悟。
 > ![一条自己选择的路](assets/pic/road.jpg "坚持")
  
 > 我可以接受失败，但绝对不能接受未曾奋斗过的自己。  
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
