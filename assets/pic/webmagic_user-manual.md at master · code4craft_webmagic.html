@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://github.com/code4craft/webmagic/blob/master/user-manual.md -->
+<html lang="en" class=" is-copy-enabled"><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>webmagic/user-manual.md at master · code4craft/webmagic</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://github.com/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://github.com/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://github.com/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://github.com/apple-touch-icon-144.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="@github" name="twitter:site"><meta content="summary" name="twitter:card"><meta content="code4craft/webmagic" name="twitter:title"><meta content="webmagic - A scalable web crawler framework." name="twitter:description"><meta content="https://avatars2.githubusercontent.com/u/1351884?v=3&amp;s=400" name="twitter:image:src">
+      <meta content="GitHub" property="og:site_name"><meta content="object" property="og:type"><meta content="https://avatars2.githubusercontent.com/u/1351884?v=3&amp;s=400" property="og:image"><meta content="code4craft/webmagic" property="og:title"><meta content="https://github.com/code4craft/webmagic" property="og:url"><meta content="webmagic - A scalable web crawler framework." property="og:description">
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="web-socket" href="wss://live.github.com/_sockets/MzY2OTQxMzo5NTkzZTczMmViOWU1YjdmMjJmMzIwZGM3YzUyODhmOToxMmZiODJjMGM4YTYxZTlhZGRmYWMyNmRkZGI3NDg3MWM0MzAxZDM4NDk0ZmRlYmU1N2Q0ZmJkNjU4YTYyODY0--c83e6ac83365496e8c901a66f52f8f3b751c3722">
+    <meta name="pjax-timeout" content="1000">
+    <link rel="sudo-modal" href="https://github.com/sessions/sudo_modal">
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient="">
+
+        <meta name="google-analytics" content="UA-3769691-2">
+
+    <meta content="collector.githubapp.com" name="octolytics-host"><meta content="collector-cdn.github.com" name="octolytics-script-host"><meta content="github" name="octolytics-app-id"><meta content="2D2129EE:44CE:3F39B16:55C33D2A" name="octolytics-dimension-request_id"><meta content="3669413" name="octolytics-actor-id"><meta content="sosop" name="octolytics-actor-login"><meta content="25b49fc0705b6e025f52149579fc054d7247a447351707144dcdcc7b37074f39" name="octolytics-actor-hash">
+    
+    <meta content="Rails, view, blob#show" data-pjax-transient="true" name="analytics-event">
+    <meta class="js-ga-set" name="dimension1" content="Logged In">
+      <meta class="js-ga-set" name="dimension4" content="Current repo nav">
+    <meta name="is-dotcom" content="true">
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="sosop">
+
+      <link rel="icon" sizes="any" mask="" href="https://assets-cdn.github.com/pinned-octocat.svg">
+      <meta name="theme-color" content="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <!-- </textarea> --><!-- '"` --><meta content="authenticity_token" name="csrf-param">
+<meta content="MDdlPpAp2zULpA3XxyznmLYDBakKN9o8r81p4WWpvsvt+qT1PMFArS3ZUu2lovlhv22cYnjT0ETSfshFY7oLng==" name="csrf-token">
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github/index-e85c4df2f00f610f7d403b70cb6ff08a89f810737918e84973d175e3c3e31f50.css" media="all" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-ef69b63d2441844ee240b72490c991b23eae664f050aa0236621ac6d79ede650.css" media="all" rel="stylesheet">
+    
+    
+
+
+    <meta http-equiv="x-pjax-version" content="3c433415bc1d94663f8b483c1c8d63a8">
+
+      
+  <meta name="description" content="webmagic - A scalable web crawler framework.">
+  <meta name="go-import" content="github.com/code4craft/webmagic git https://github.com/code4craft/webmagic.git">
+
+  <meta content="1351884" name="octolytics-dimension-user_id"><meta content="code4craft" name="octolytics-dimension-user_login"><meta content="9623064" name="octolytics-dimension-repository_id"><meta content="code4craft/webmagic" name="octolytics-dimension-repository_nwo"><meta content="true" name="octolytics-dimension-repository_public"><meta content="false" name="octolytics-dimension-repository_is_fork"><meta content="9623064" name="octolytics-dimension-repository_network_root_id"><meta content="code4craft/webmagic" name="octolytics-dimension-repository_network_root_nwo">
+  <link href="https://github.com/code4craft/webmagic/commits/master.atom" rel="alternate" title="Recent Commits to webmagic:master" type="application/atom+xml">
+
+  <script type="text/javascript" async="" src="./webmagic_user-manual.md at master · code4craft_webmagic_files/api.js"></script></head>
+
+
+  <body class="logged_in  env-production macintosh vis-public page-blob">
+    <a href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+
+
+
+        <div class="header header-logged-in true" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <span class="mega-octicon octicon-mark-github"></span>
+</a>
+
+
+      <div class="site-search repo-scope js-site-search" role="search">
+          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/code4craft/webmagic/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/code4craft/webmagic/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text" class="js-site-search-focus js-site-search-field is-clearable chromeless-input" data-hotkey="s" name="q" placeholder="Search" aria-label="Search this repository" data-global-scope-placeholder="Search GitHub" data-repo-scope-placeholder="Search" tabindex="1" autocapitalize="off">
+  </label>
+</form>
+      </div>
+
+      <ul class="header-nav left" role="navigation">
+        <li class="header-nav-item">
+          <a href="https://github.com/pulls" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:pulls context:user" data-hotkey="g p" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls">
+            Pull requests
+</a>        </li>
+        <li class="header-nav-item">
+          <a href="https://github.com/issues" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:issues context:user" data-hotkey="g i" data-selected-links="/issues /issues/assigned /issues/mentioned /issues">
+            Issues
+</a>        </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://gist.github.com/" data-ga-click="Header, go to gist, text:gist">Gist</a>
+          </li>
+      </ul>
+
+    
+<ul class="header-nav user-nav right" id="user-links">
+  <li class="header-nav-item">
+      <span class="js-socket-channel js-updatable-content" data-channel="notification-changed:sosop" data-url="/notifications/header">
+      <a href="https://github.com/notifications" aria-label="You have no unread notifications" class="header-nav-link notification-indicator tooltipped tooltipped-s" data-ga-click="Header, go to notifications, icon:read" data-hotkey="g n">
+          <span class="mail-status all-read"></span>
+          <span class="octicon octicon-inbox"></span>
+</a>  </span>
+
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link tooltipped tooltipped-s js-menu-target" href="https://github.com/new" aria-label="Create new…" data-ga-click="Header, create new, icon:add">
+      <span class="octicon octicon-plus left"></span>
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      <ul class="dropdown-menu dropdown-menu-sw">
+        
+<a class="dropdown-item" href="https://github.com/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+
+  <a class="dropdown-item" href="https://github.com/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="code4craft/webmagic">This repository</span>
+  </div>
+    <a class="dropdown-item" href="https://github.com/code4craft/webmagic/issues/new" data-ga-click="Header, create new issue">
+      New issue
+    </a>
+
+      </ul>
+    </div>
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link name tooltipped tooltipped-s js-menu-target" href="https://github.com/sosop" aria-label="View profile and more" data-ga-click="Header, show menu, icon:avatar">
+      <img alt="@sosop" class="avatar" height="20" src="./webmagic_user-manual.md at master · code4craft_webmagic_files/3669413" width="20">
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      <div class="dropdown-menu dropdown-menu-sw">
+        <div class="dropdown-header header-nav-current-user css-truncate">
+          Signed in as <strong class="css-truncate-target">sosop</strong>
+        </div>
+        <div class="dropdown-divider"></div>
+
+        <a class="dropdown-item" href="https://github.com/sosop" data-ga-click="Header, go to profile, text:your profile">
+          Your profile
+        </a>
+        <a class="dropdown-item" href="https://github.com/stars" data-ga-click="Header, go to starred repos, text:your stars">
+          Your stars
+        </a>
+        <a class="dropdown-item" href="https://github.com/explore" data-ga-click="Header, go to explore, text:explore">
+          Explore
+        </a>
+        <a class="dropdown-item" href="https://help.github.com/" data-ga-click="Header, go to help, text:help">
+          Help
+        </a>
+        <div class="dropdown-divider"></div>
+
+        <a class="dropdown-item" href="https://github.com/settings/profile" data-ga-click="Header, go to settings, icon:settings">
+          Settings
+        </a>
+
+        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/logout" class="logout-form" data-form-nonce="bdbed5aef257f92478ddd1a25155849d45929460" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="vSlZRW81T1TA/mPs1hKNvie6fZtashEU535cf6rSZljBYWa09HxR5kzM/7vpYpM5JpZ0mF+zEo8GjUPsOkCrQg=="></div>
+          <button class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+</form>      </div>
+    </div>
+  </li>
+</ul>
+
+
+    
+  </div>
+</div>
+
+        
+
+        
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope="" itemtype="http://schema.org/WebPage">
+    <div id="js-flash-container">
+      
+    </div>
+    <div class="pagehead repohead instapaper_ignore readability-menu ">
+      <div class="container">
+
+        <div class="clearfix">
+          
+<ul class="pagehead-actions">
+
+  <li>
+      <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-form-nonce="bdbed5aef257f92478ddd1a25155849d45929460" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="15dKgtuPxQeSzUYTC0sbXUHaNxjWWhPq/Iek5FyUmMBsXZeDddpBJqf+0OaprdZJekq6zcDTAnGM2saNwaGJrQ=="></div>    <input id="repository_id" name="repository_id" type="hidden" value="9623064">
+
+      <div class="select-menu js-menu-container js-select-menu">
+        <a href="https://github.com/code4craft/webmagic/subscription" class="btn btn-sm btn-with-count select-menu-button js-menu-target" role="button" tabindex="0" aria-haspopup="true" data-ga-click="Repository, click Watch settings, action:blob#show">
+          <span class="js-select-button">
+            <span class="octicon octicon-eye"></span>
+            Watch
+          </span>
+        </a>
+        <a class="social-count js-social-count" href="https://github.com/code4craft/webmagic/watchers">
+          256
+        </a>
+
+        <div class="select-menu-modal-holder">
+          <div class="select-menu-modal subscription-menu-modal js-menu-content" aria-hidden="true">
+            <div class="select-menu-header">
+              <span class="select-menu-title">Notifications</span>
+              <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+            </div>
+
+            <div class="select-menu-list js-navigation-container" role="menu">
+
+              <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                <span class="select-menu-item-icon octicon octicon-check"></span>
+                <div class="select-menu-item-text">
+                  <input checked="checked" id="do_included" name="do" type="radio" value="included">
+                  <span class="select-menu-item-heading">Not watching</span>
+                  <span class="description">Be notified when participating or @mentioned.</span>
+                  <span class="js-select-button-text hidden-select-button-text">
+                    <span class="octicon octicon-eye"></span>
+                    Watch
+                  </span>
+                </div>
+              </div>
+
+              <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                <span class="select-menu-item-icon octicon octicon octicon-check"></span>
+                <div class="select-menu-item-text">
+                  <input id="do_subscribed" name="do" type="radio" value="subscribed">
+                  <span class="select-menu-item-heading">Watching</span>
+                  <span class="description">Be notified of all conversations.</span>
+                  <span class="js-select-button-text hidden-select-button-text">
+                    <span class="octicon octicon-eye"></span>
+                    Unwatch
+                  </span>
+                </div>
+              </div>
+
+              <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                <span class="select-menu-item-icon octicon octicon-check"></span>
+                <div class="select-menu-item-text">
+                  <input id="do_ignore" name="do" type="radio" value="ignore">
+                  <span class="select-menu-item-heading">Ignoring</span>
+                  <span class="description">Never be notified.</span>
+                  <span class="js-select-button-text hidden-select-button-text">
+                    <span class="octicon octicon-mute"></span>
+                    Stop ignoring
+                  </span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/code4craft/webmagic/unstar" class="js-toggler-form starred js-unstar-button" data-form-nonce="bdbed5aef257f92478ddd1a25155849d45929460" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="PavKq9MspWdigTRjUXGlmsJ4YvfB0pkkgyLcMSRy5vC0JBYzaPHYqgEzwE3jfHZS/abVatYFInnQdnVxs4Z62A=="></div>
+      <button class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar code4craft/webmagic" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">
+        <span class="octicon octicon-star"></span>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="https://github.com/code4craft/webmagic/stargazers">
+          1,195
+        </a>
+</form>
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/code4craft/webmagic/star" class="js-toggler-form unstarred js-star-button" data-form-nonce="bdbed5aef257f92478ddd1a25155849d45929460" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="l2XgGkusSnXxP3LNamNPifYQyi9JsZ6MHGkW7wIgrOXzo8gjuiPO4/rFqMTEHhSbHYWPNdq+fAEkwHhOl4Trxg=="></div>
+      <button class="btn btn-sm btn-with-count js-toggler-target" aria-label="Star this repository" title="Star code4craft/webmagic" data-ga-click="Repository, click star button, action:blob#show; text:Star">
+        <span class="octicon octicon-star"></span>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="https://github.com/code4craft/webmagic/stargazers">
+          1,195
+        </a>
+</form>  </div>
+
+  </li>
+
+        <li>
+          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/code4craft/webmagic/fork" data-form-nonce="bdbed5aef257f92478ddd1a25155849d45929460" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="GP2VxBi5kW6cpNwHL6YwLN2Nr1nLokSPU14HelX0KMoakJwTknpaRZ8wNXAsqB/gRtcEPCYpANRF8SFK5Hm7QA=="></div>
+            <button type="submit" class="btn btn-sm btn-with-count" data-ga-click="Repository, show fork modal, action:blob#show; text:Fork" title="Fork your own copy of code4craft/webmagic to your account" aria-label="Fork your own copy of code4craft/webmagic to your account">
+              <span class="octicon octicon-repo-forked"></span>
+              Fork
+            </button>
+            <a href="https://github.com/code4craft/webmagic/network" class="social-count">776</a>
+</form>        </li>
+
+</ul>
+
+          <h1 itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public ">
+            <span class="mega-octicon octicon-repo"></span>
+            <span class="author"><a href="https://github.com/code4craft" class="url fn" itemprop="url" rel="author"><span itemprop="title">code4craft</span></a></span><!--
+         --><span class="path-divider">/</span><!--
+         --><strong><a href="https://github.com/code4craft/webmagic" data-pjax="#js-repo-pjax-container">webmagic</a></strong>
+
+            <span class="page-context-loader">
+              <img alt="" height="16" src="./webmagic_user-manual.md at master · code4craft_webmagic_files/octocat-spinner-32.gif" width="16">
+            </span>
+
+          </h1>
+        </div>
+
+      </div>
+    </div>
+
+      <div class="container">
+        <div class="repository-with-sidebar repo-container new-discussion-timeline">
+          <div class="repository-sidebar clearfix">
+              
+
+<nav class="sunken-menu repo-nav js-repo-nav js-sidenav-container-pjax js-octicon-loaders" role="navigation" data-pjax="#js-repo-pjax-container" data-issue-count-url="/code4craft/webmagic/issues/counts">
+  <ul class="sunken-menu-group">
+    <li class="tooltipped tooltipped-w" aria-label="Code">
+      <a href="https://github.com/code4craft/webmagic" aria-label="Code" aria-selected="true" class="js-selected-navigation-item selected sunken-menu-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /code4craft/webmagic">
+        <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+        <img alt="" class="mini-loader" height="16" src="./webmagic_user-manual.md at master · code4craft_webmagic_files/octocat-spinner-32.gif" width="16">
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Issues">
+        <a href="https://github.com/code4craft/webmagic/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /code4craft/webmagic/issues">
+          <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+          <span class="js-issue-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="./webmagic_user-manual.md at master · code4craft_webmagic_files/octocat-spinner-32.gif" width="16">
+</a>      </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Pull requests">
+      <a href="https://github.com/code4craft/webmagic/pulls" aria-label="Pull requests" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g p" data-selected-links="repo_pulls /code4craft/webmagic/pulls">
+          <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull requests</span>
+          <span class="js-pull-replace-counter"></span>
+          <img alt="" class="mini-loader" height="16" src="./webmagic_user-manual.md at master · code4craft_webmagic_files/octocat-spinner-32.gif" width="16">
+</a>    </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Wiki">
+        <a href="https://github.com/code4craft/webmagic/wiki" aria-label="Wiki" class="js-selected-navigation-item sunken-menu-item" data-hotkey="g w" data-selected-links="repo_wiki /code4craft/webmagic/wiki">
+          <span class="octicon octicon-book"></span> <span class="full-word">Wiki</span>
+          <img alt="" class="mini-loader" height="16" src="./webmagic_user-manual.md at master · code4craft_webmagic_files/octocat-spinner-32.gif" width="16">
+</a>      </li>
+  </ul>
+  <div class="sunken-menu-separator"></div>
+  <ul class="sunken-menu-group">
+
+    <li class="tooltipped tooltipped-w" aria-label="Pulse">
+      <a href="https://github.com/code4craft/webmagic/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-selected-links="pulse /code4craft/webmagic/pulse">
+        <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+        <img alt="" class="mini-loader" height="16" src="./webmagic_user-manual.md at master · code4craft_webmagic_files/octocat-spinner-32.gif" width="16">
+</a>    </li>
+
+    <li class="tooltipped tooltipped-w" aria-label="Graphs">
+      <a href="https://github.com/code4craft/webmagic/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-selected-links="repo_graphs repo_contributors /code4craft/webmagic/graphs">
+        <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+        <img alt="" class="mini-loader" height="16" src="./webmagic_user-manual.md at master · code4craft_webmagic_files/octocat-spinner-32.gif" width="16">
+</a>    </li>
+  </ul>
+
+
+</nav>
+
+                <div class="only-with-full-nav">
+                    
+<div class="js-clone-url clone-url " data-protocol-type="http">
+  <h3><span class="text-emphasized">HTTPS</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target" value="https://github.com/code4craft/webmagic.git" readonly="readonly" aria-label="HTTPS clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url open" data-protocol-type="ssh">
+  <h3><span class="text-emphasized">SSH</span> clone URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target" value="git@github.com:code4craft/webmagic.git" readonly="readonly" aria-label="SSH clone URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+  
+<div class="js-clone-url clone-url " data-protocol-type="subversion">
+  <h3><span class="text-emphasized">Subversion</span> checkout URL</h3>
+  <div class="input-group js-zeroclipboard-container">
+    <input type="text" class="input-mini input-monospace js-url-field js-zeroclipboard-target" value="https://github.com/code4craft/webmagic" readonly="readonly" aria-label="Subversion checkout URL">
+    <span class="input-group-button">
+      <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </span>
+  </div>
+</div>
+
+
+
+  <div class="clone-options">You can clone with
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/users/set_protocol?protocol_selector=http&protocol_type=clone" class="inline-form js-clone-selector-form is-enabled" data-form-nonce="bdbed5aef257f92478ddd1a25155849d45929460" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="IvU1GM3R6suV99yMgaETCmHEqIH6/OTOryB8EFV3+R1CJ/SpGtV+g7coibMdTyZL2n8dIvf3Xd2j4IQhxBlF/Q=="></div><button class="btn-link js-clone-selector" data-protocol="http" type="submit">HTTPS</button></form>, <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/users/set_protocol?protocol_selector=ssh&protocol_type=clone" class="inline-form js-clone-selector-form is-enabled" data-form-nonce="bdbed5aef257f92478ddd1a25155849d45929460" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="mAfyXOxlz/yJTGzzDH37XXGevD6bzUwpFROiycEsYoJrFiEdqb59cm6BpLh7Zt9n/eDb23m1eCDNFPwVnDM+Nw=="></div><button class="btn-link js-clone-selector" data-protocol="ssh" type="submit">SSH</button></form>, or <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/users/set_protocol?protocol_selector=subversion&protocol_type=clone" class="inline-form js-clone-selector-form is-enabled" data-form-nonce="bdbed5aef257f92478ddd1a25155849d45929460" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="tpjS8tirB6OMw/k61z+sVKHf0NPoKZcQqLHsLO+Xz4mY91buO9vWDJAW2ofhW7Y320xV8lcr0k3lHyBextOkpw=="></div><button class="btn-link js-clone-selector" data-protocol="subversion" type="submit">Subversion</button></form>.
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use" class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+      <span class="octicon octicon-question"></span>
+    </a>
+  </div>
+    <a href="https://mac.github.com/" class="btn btn-sm sidebar-button" title="Save code4craft/webmagic to your computer and use it in GitHub Desktop." aria-label="Save code4craft/webmagic to your computer and use it in GitHub Desktop.">
+      <span class="octicon octicon-device-desktop"></span>
+      Clone in Desktop
+    </a>
+
+                  <a href="https://github.com/code4craft/webmagic/archive/master.zip" class="btn btn-sm sidebar-button" aria-label="Download the contents of code4craft/webmagic as a zip file" title="Download the contents of code4craft/webmagic as a zip file" rel="nofollow">
+                    <span class="octicon octicon-cloud-download"></span>
+                    Download ZIP
+                  </a>
+                </div>
+          </div>
+          <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container="">
+
+            
+
+<a href="https://github.com/code4craft/webmagic/blob/56e0cd513a48b05e2c472988047ced82dfe1c3e3/user-manual.md" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+<!-- blob contrib key: blob_contributors:v21:c572f9d65f602906c45f723fb0e06087 -->
+
+  <div class="file-navigation js-zeroclipboard-container">
+    
+<div class="select-menu js-menu-container js-select-menu left">
+  <span class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w" data-ref="master" title="master" role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax="" aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-x js-menu-close" role="button" aria-label="Close"></span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/code4craft/webmagic/blob/0.4.x/user-manual.md" data-name="0.4.x" data-skip-pjax="true" rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="0.4.x">
+                0.4.x
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/code4craft/webmagic/blob/0.6.0/user-manual.md" data-name="0.6.0" data-skip-pjax="true" rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="0.6.0">
+                0.6.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/code4craft/webmagic/blob/en-webmagic/user-manual.md" data-name="en-webmagic" data-skip-pjax="true" rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="en-webmagic">
+                en-webmagic
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/code4craft/webmagic/blob/gh-pages/user-manual.md" data-name="gh-pages" data-skip-pjax="true" rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="gh-pages">
+                gh-pages
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected" href="./webmagic_user-manual.md at master · code4craft_webmagic_files/webmagic_user-manual.md at master · code4craft_webmagic.html" data-name="master" data-skip-pjax="true" rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="master">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/code4craft/webmagic/blob/stable/user-manual.md" data-name="stable" data-skip-pjax="true" rel="nofollow">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <span class="select-menu-item-text css-truncate-target" title="stable">
+                stable
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/code4craft/webmagic/tree/webmaigc-0.4.3/user-manual.md" data-name="webmaigc-0.4.3" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="webmaigc-0.4.3">webmaigc-0.4.3</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/code4craft/webmagic/tree/webmagic-parent-0.3.1/user-manual.md" data-name="webmagic-parent-0.3.1" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="webmagic-parent-0.3.1">webmagic-parent-0.3.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/code4craft/webmagic/tree/webmagic-parent-0.2.1/user-manual.md" data-name="webmagic-parent-0.2.1" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="webmagic-parent-0.2.1">webmagic-parent-0.2.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/code4craft/webmagic/tree/webmagic-0.4.2/user-manual.md" data-name="webmagic-0.4.2" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="webmagic-0.4.2">webmagic-0.4.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/code4craft/webmagic/tree/webmagic-0.4.1/user-manual.md" data-name="webmagic-0.4.1" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="webmagic-0.4.1">webmagic-0.4.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/code4craft/webmagic/tree/webmagic-0.4.0/user-manual.md" data-name="webmagic-0.4.0" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="webmagic-0.4.0">webmagic-0.4.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/code4craft/webmagic/tree/webmagic-0.3.2/user-manual.md" data-name="webmagic-0.3.2" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="webmagic-0.3.2">webmagic-0.3.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/code4craft/webmagic/tree/webmagic-0.3.0/user-manual.md" data-name="webmagic-0.3.0" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="webmagic-0.3.0">webmagic-0.3.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/code4craft/webmagic/tree/version-0.2.0/user-manual.md" data-name="version-0.2.0" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="version-0.2.0">version-0.2.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/code4craft/webmagic/tree/version-0.1.0/user-manual.md" data-name="version-0.1.0" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="version-0.1.0">version-0.1.0</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/code4craft/webmagic/tree/WebMagic-0.5.2/user-manual.md" data-name="WebMagic-0.5.2" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="WebMagic-0.5.2">WebMagic-0.5.2</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/code4craft/webmagic/tree/WebMagic-0.5.1/user-manual.md" data-name="WebMagic-0.5.1" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="WebMagic-0.5.1">WebMagic-0.5.1</a>
+            </div>
+            <div class="select-menu-item js-navigation-item ">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="https://github.com/code4craft/webmagic/tree/WebMagic-0.5.0/user-manual.md" data-name="WebMagic-0.5.0" data-skip-pjax="true" rel="nofollow" class="js-navigation-open select-menu-item-text css-truncate-target" title="WebMagic-0.5.0">WebMagic-0.5.0</a>
+            </div>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="btn-group right">
+      <a href="https://github.com/code4craft/webmagic/find/master" class="js-show-file-finder btn btn-sm empty-icon tooltipped tooltipped-nw" data-pjax="" data-hotkey="t" aria-label="Quickly jump between files">
+        <span class="octicon octicon-list-unordered"></span>
+      </a>
+      <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><span class="octicon octicon-clippy"></span></button>
+    </div>
+
+    <div class="breadcrumb js-zeroclipboard-target">
+      <span class="repo-root js-repo-root"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://github.com/code4craft/webmagic" class="" data-branch="master" data-pjax="true" itemscope="url"><span itemprop="title">webmagic</span></a></span></span><span class="separator">/</span><strong class="final-path">user-manual.md</strong>
+    </div>
+  </div>
+
+
+  <div class="commit file-history-tease">
+    <div class="file-history-tease-header">
+        <img alt="@code4craft" class="avatar" height="24" src="./webmagic_user-manual.md at master · code4craft_webmagic_files/1351884" width="24">
+        <span class="author"><a href="https://github.com/code4craft" rel="author">code4craft</a></span>
+        <time datetime="2014-05-02T22:29:37Z" is="relative-time" title="2014年5月3日 GMT+8上午6:29">on 3 May 2014</time>
+        <div class="commit-title">
+            <a href="https://github.com/code4craft/webmagic/commit/5f6f48931497d80463dace8a97e66e9a7b10d79e" class="message" data-pjax="true" title="deperate in user manual">deperate in user manual</a>
+        </div>
+    </div>
+
+    <div class="participation">
+      <p class="quickstat">
+        <a href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#blob_contributors_box" rel="facebox">
+          <strong>1</strong>
+           contributor
+        </a>
+      </p>
+      
+    </div>
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list">
+          <li class="facebox-user-list-item">
+            <img alt="@code4craft" height="24" src="./webmagic_user-manual.md at master · code4craft_webmagic_files/1351884" width="24">
+            <a href="https://github.com/code4craft">code4craft</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+<div class="file">
+  <div class="file-header">
+    <div class="file-actions">
+
+      <div class="btn-group">
+        <a href="https://github.com/code4craft/webmagic/raw/master/user-manual.md" class="btn btn-sm " id="raw-url">Raw</a>
+          <a href="https://github.com/code4craft/webmagic/blame/master/user-manual.md" class="btn btn-sm js-update-url-with-hash">Blame</a>
+        <a href="https://github.com/code4craft/webmagic/commits/master/user-manual.md" class="btn btn-sm " rel="nofollow">History</a>
+      </div>
+
+        <a class="octicon-btn tooltipped tooltipped-nw" href="https://mac.github.com/" aria-label="Open this file in GitHub for Mac" data-ga-click="Repository, open with desktop, type:mac">
+            <span class="octicon octicon-device-desktop"></span>
+        </a>
+
+            <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/code4craft/webmagic/edit/master/user-manual.md" class="inline-form" data-form-nonce="bdbed5aef257f92478ddd1a25155849d45929460" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="wJJgZBy4IsSiHkgjabu+pDeIL5cp6QPsIS4hAd8jSp1SO3zrA8oGlOIoPTOePS1BCgcShm/C9kSZoUC7zmpGNg=="></div>
+              <button class="octicon-btn tooltipped tooltipped-n" type="submit" aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with="">
+                <span class="octicon octicon-pencil"></span>
+              </button>
+</form>
+          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/code4craft/webmagic/delete/master/user-manual.md" class="inline-form" data-form-nonce="bdbed5aef257f92478ddd1a25155849d45929460" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="LX0ZgrCdqD1hrJ+L25vxQ0kCsYV1djIIojjI4rI/YEGR94L9nXfk8SOpT/u+9cGsiSqIN941FMvQGbdw0HVDSQ=="></div>
+            <button class="octicon-btn octicon-btn-danger tooltipped tooltipped-n" type="submit" aria-label="Fork this project and delete this file" data-disable-with="">
+              <span class="octicon octicon-trashcan"></span>
+            </button>
+</form>    </div>
+
+    <div class="file-info">
+        447 lines (287 sloc)
+        <span class="file-info-divider"></span>
+      20.529 kB
+    </div>
+  </div>
+  
+  <div id="readme" class="blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1><a id="user-content-webmagic使用手册" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#webmagic使用手册" aria-hidden="true"><span class="octicon octicon-link"></span></a>webmagic使用手册</h1>
+
+<blockquote>
+<p>新版文档地址<a href="http://webmagic.io/docs/">http://webmagic.io/docs/</a>，此手册已不再更新。</p>
+</blockquote>
+
+<div></div>
+
+<hr>
+
+<h2><a id="user-content-下载及安装" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#下载及安装" aria-hidden="true"><span class="octicon octicon-link"></span></a>下载及安装</h2>
+
+<h3><a id="user-content-使用maven" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#使用maven" aria-hidden="true"><span class="octicon octicon-link"></span></a>使用maven</h3>
+
+<p>webmagic使用maven管理依赖，在项目中添加对应的依赖即可使用webmagic：</p>
+
+<pre><code>    &lt;dependency&gt;
+        &lt;groupId&gt;us.codecraft&lt;/groupId&gt;
+        &lt;artifactId&gt;webmagic-core&lt;/artifactId&gt;
+        &lt;version&gt;0.4.2&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;us.codecraft&lt;/groupId&gt;
+        &lt;artifactId&gt;webmagic-extension&lt;/artifactId&gt;
+        &lt;version&gt;0.4.2&lt;/version&gt;
+    &lt;/dependency&gt;
+</code></pre>
+
+<h4><a id="user-content-项目结构" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#项目结构" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目结构</h4>
+
+<p>webmagic主要包括两个包：</p>
+
+<ul>
+<li><p><strong>webmagic-core</strong></p>
+
+<p>webmagic核心部分，只包含爬虫基本模块和基本抽取器。webmagic-core的目标是成为网页爬虫的一个教科书般的实现。</p></li>
+<li><p><strong>webmagic-extension</strong></p>
+
+<p>webmagic的扩展模块，提供一些更方便的编写爬虫的工具。包括注解格式定义爬虫、JSON、分布式等支持。</p></li>
+</ul>
+
+<p>webmagic还包含两个可用的扩展包，因为这两个包都依赖了比较重量级的工具，所以从主要包中抽离出来，这些包需要下载源码后自己编译：</p>
+
+<ul>
+<li><p><strong>webmagic-saxon</strong></p>
+
+<p>webmagic与Saxon结合的模块。Saxon是一个XPath、XSLT的解析工具，webmagic依赖Saxon来进行XPath2.0语法解析支持。</p></li>
+<li><p><strong>webmagic-selenium</strong></p>
+
+<p>webmagic与Selenium结合的模块。Selenium是一个模拟浏览器进行页面渲染的工具，webmagic依赖Selenium进行动态页面的抓取。</p></li>
+</ul>
+
+<p>在项目中，你可以根据需要依赖不同的包。</p>
+
+<h3><a id="user-content-不使用maven" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#不使用maven" aria-hidden="true"><span class="octicon octicon-link"></span></a>不使用maven</h3>
+
+<p>不使用maven的用户，可以下载附带二进制jar包的版本(感谢<a href="http://www.oschina.net/">oschina</a>)：</p>
+
+<pre><code>git clone http://git.oschina.net/flashsword20/webmagic.git
+</code></pre>
+
+<p>在<strong>lib</strong>目录下，有项目依赖的所有jar包，直接在IDE里import即可。</p>
+
+<hr>
+
+<h2><a id="user-content-第一个爬虫" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#第一个爬虫" aria-hidden="true"><span class="octicon octicon-link"></span></a>第一个爬虫</h2>
+
+<h3><a id="user-content-定制pageprocessor" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#定制pageprocessor" aria-hidden="true"><span class="octicon octicon-link"></span></a>定制PageProcessor</h3>
+
+<p>PageProcessor是webmagic-core的一部分，定制一个PageProcessor即可实现自己的爬虫逻辑。以下是抓取osc博客的一段代码：</p>
+
+<div class="highlight highlight-java"><pre>    <span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">OschinaBlogPageProcesser</span> <span class="pl-k">implements</span> <span class="pl-e">PageProcessor</span> {
+
+        <span class="pl-k">private</span> <span class="pl-smi">Site</span> site <span class="pl-k">=</span> <span class="pl-smi">Site</span><span class="pl-k">.</span>me()<span class="pl-k">.</span>setDomain(<span class="pl-s"><span class="pl-pds">"</span>my.oschina.net<span class="pl-pds">"</span></span>)
+           .addStartUrl(<span class="pl-s"><span class="pl-pds">"</span>http://my.oschina.net/flashsword/blog<span class="pl-pds">"</span></span>);
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">process</span>(<span class="pl-smi">Page</span> <span class="pl-v">page</span>) {
+            <span class="pl-k">List&lt;<span class="pl-smi">String</span>&gt;</span> links <span class="pl-k">=</span> page<span class="pl-k">.</span>getHtml()<span class="pl-k">.</span>links()<span class="pl-k">.</span>regex(<span class="pl-s"><span class="pl-pds">"</span>http://my<span class="pl-cce">\\</span>.oschina<span class="pl-cce">\\</span>.net/flashsword/blog/<span class="pl-cce">\\</span>d+<span class="pl-pds">"</span></span>)<span class="pl-k">.</span>all();
+            page<span class="pl-k">.</span>addTargetRequests(links);
+            page<span class="pl-k">.</span>putField(<span class="pl-s"><span class="pl-pds">"</span>title<span class="pl-pds">"</span></span>, page<span class="pl-k">.</span>getHtml()<span class="pl-k">.</span>xpath(<span class="pl-s"><span class="pl-pds">"</span>//div[@class='BlogEntity']/div[@class='BlogTitle']/h1<span class="pl-pds">"</span></span>)<span class="pl-k">.</span>toString());
+            page<span class="pl-k">.</span>putField(<span class="pl-s"><span class="pl-pds">"</span>content<span class="pl-pds">"</span></span>, page<span class="pl-k">.</span>getHtml()<span class="pl-c1">.</span>$(<span class="pl-s"><span class="pl-pds">"</span>div.content<span class="pl-pds">"</span></span>)<span class="pl-k">.</span>toString());
+            page<span class="pl-k">.</span>putField(<span class="pl-s"><span class="pl-pds">"</span>tags<span class="pl-pds">"</span></span>,page<span class="pl-k">.</span>getHtml()<span class="pl-k">.</span>xpath(<span class="pl-s"><span class="pl-pds">"</span>//div[@class='BlogTags']/a/text()<span class="pl-pds">"</span></span>)<span class="pl-k">.</span>all());
+        }
+
+        <span class="pl-k">@Override</span>
+        <span class="pl-k">public</span> <span class="pl-smi">Site</span> <span class="pl-en">getSite</span>() {
+            <span class="pl-k">return</span> site;
+
+        }
+
+        <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">void</span> <span class="pl-en">main</span>(<span class="pl-k">String</span>[] <span class="pl-v">args</span>) {
+            <span class="pl-smi">Spider</span><span class="pl-k">.</span>create(<span class="pl-k">new</span> <span class="pl-smi">OschinaBlogPageProcesser</span>())
+                 .pipeline(<span class="pl-k">new</span> <span class="pl-smi">ConsolePipeline</span>())<span class="pl-k">.</span>run();
+        }
+    }</pre></div>
+
+<p>这里通过page.addTargetRequests()方法来增加要抓取的URL，并通过page.putField()来保存抽取结果。page.getHtml().xpath()则是按照某个规则对结果进行抽取，这里抽取支持链式调用。调用结束后，toString()表示转化为单个String，all()则转化为一个String列表。</p>
+
+<p>Spider是爬虫的入口类。Pipeline是结果输出和持久化的接口，这里ConsolePipeline表示结果输出到控制台。</p>
+
+<p>执行这个main方法，即可在控制台看到抓取结果。webmagic默认有3秒抓取间隔，请耐心等待。你可以通过site.setSleepTime(int)修改这个值。site还有一些修改抓取属性的方法。</p>
+
+<h4><a id="user-content-使用注解" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#使用注解" aria-hidden="true"><span class="octicon octicon-link"></span></a>使用注解</h4>
+
+<p>webmagic-extension包括了注解方式编写爬虫的方法，只需基于一个POJO增加注解即可完成一个爬虫。以下仍然是抓取oschina博客的一段代码，功能与OschinaBlogPageProcesser完全相同：</p>
+
+<div class="highlight highlight-java"><pre>    @TargetUrl(<span class="pl-s"><span class="pl-pds">"</span>http://my.oschina.net/flashsword/blog/<span class="pl-cce">\\</span>d+<span class="pl-pds">"</span></span>)
+    <span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">OschinaBlog</span> {
+
+        <span class="pl-k">@ExtractBy</span>(<span class="pl-s"><span class="pl-pds">"</span>//title<span class="pl-pds">"</span></span>)
+        <span class="pl-k">private</span> <span class="pl-smi">String</span> title;
+
+        <span class="pl-k">@ExtractBy</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>div.BlogContent<span class="pl-pds">"</span></span>,<span class="pl-c1">type</span> <span class="pl-k">=</span> <span class="pl-smi">ExtractBy</span><span class="pl-k">.</span><span class="pl-smi">Type</span><span class="pl-k">.</span><span class="pl-smi">Css</span>)
+        <span class="pl-k">private</span> <span class="pl-smi">String</span> content;
+
+        <span class="pl-k">@ExtractBy</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>//div[@class='BlogTags']/a/text()<span class="pl-pds">"</span></span>, <span class="pl-c1">multi</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>)
+        <span class="pl-k">private</span> <span class="pl-k">List&lt;<span class="pl-smi">String</span>&gt;</span> tags;
+
+        <span class="pl-k">@Formatter</span>(<span class="pl-s"><span class="pl-pds">"</span>yyyy-MM-dd HH:mm<span class="pl-pds">"</span></span>)
+        <span class="pl-k">@ExtractBy</span>(<span class="pl-s"><span class="pl-pds">"</span>//div[@class='BlogStat']/regex('<span class="pl-cce">\\</span>d+-<span class="pl-cce">\\</span>d+-<span class="pl-cce">\\</span>d+<span class="pl-cce">\\</span>s+<span class="pl-cce">\\</span>d+:<span class="pl-cce">\\</span>d+')<span class="pl-pds">"</span></span>)
+        <span class="pl-k">private</span> <span class="pl-smi">Date</span> date; 
+
+        <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">void</span> <span class="pl-en">main</span>(<span class="pl-k">String</span>[] <span class="pl-v">args</span>) {
+            <span class="pl-smi">OOSpider</span><span class="pl-k">.</span>create(
+                <span class="pl-smi">Site</span><span class="pl-k">.</span>me()<span class="pl-k">.</span>addStartUrl(<span class="pl-s"><span class="pl-pds">"</span>http://my.oschina.net/flashsword/blog<span class="pl-pds">"</span></span>),
+                <span class="pl-k">new</span> <span class="pl-smi">ConsolePageModelPipeline</span>(), <span class="pl-smi">OschinaBlog</span><span class="pl-k">.</span>class)<span class="pl-k">.</span>run();
+        }
+    }</pre></div>
+
+<p>这个例子定义了一个Model类，Model类的字段'title'、'content'、'tags'均为要抽取的属性。这个类在Pipeline里是可以复用的。</p>
+
+<p>注解的详细使用方式见后文中的webmagic-extension注解模块。</p>
+
+<div></div>
+
+<hr>
+
+<h2><a id="user-content-模块详细介绍" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#模块详细介绍" aria-hidden="true"><span class="octicon octicon-link"></span></a>模块详细介绍</h2>
+
+<h2><a id="user-content-webmagic-core" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#webmagic-core" aria-hidden="true"><span class="octicon octicon-link"></span></a>webmagic-core</h2>
+
+<p>webmagic-core是爬虫的核心框架，只包括一个爬虫各功能模块的核心功能。webmagic-core的目标是成为网页爬虫的一个教科书般的实现。</p>
+
+<p>此节部分内容摘自作者的博文
+<a href="http://my.oschina.net/flashsword/blog/145796">webmagic的设计机制及原理-如何开发一个Java爬虫</a>。</p>
+
+<h3><a id="user-content-webmagic-core的模块划分" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#webmagic-core的模块划分" aria-hidden="true"><span class="octicon octicon-link"></span></a>webmagic-core的模块划分</h3>
+
+<p>webmagic-core参考了scrapy的模块划分，分为Spider(整个爬虫的调度框架)、Downloader(页面下载)、PageProcessor(链接提取和页面分析)、Scheduler(URL管理)、Pipeline(离线分析和持久化)几部分。只不过scrapy通过middleware实现扩展，而webmagic则通过定义这几个接口，并将其不同的实现注入主框架类Spider来实现扩展。</p>
+
+<p><a href="./webmagic_user-manual.md at master · code4craft_webmagic_files/687474703a2f2f636f64653463726166742e6769746875622e696f2f696d616765732f706f7374732f7765626d616769632e706e67" target="_blank"><img src="./webmagic_user-manual.md at master · code4craft_webmagic_files/687474703a2f2f636f64653463726166742e6769746875622e696f2f696d616765732f706f7374732f7765626d616769632e706e67" alt="image" data-canonical-src="http://code4craft.github.io/images/posts/webmagic.png" style="max-width:100%;"></a></p>
+
+<div></div>
+
+<h4><a id="user-content-spider类核心调度" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#spider类核心调度" aria-hidden="true"><span class="octicon octicon-link"></span></a>Spider类(核心调度)</h4>
+
+<p><strong>Spider</strong>是爬虫的入口类，Spider的接口调用采用了链式的API设计，其他功能全部通过接口注入Spider实现，下面是启动一个比较复杂的Spider的例子。</p>
+
+<div class="highlight highlight-java"><pre>    <span class="pl-smi">Spider</span><span class="pl-k">.</span>create(sinaBlogProcessor)
+    .scheduler(<span class="pl-k">new</span> <span class="pl-smi">FileCacheQueueScheduler</span>(<span class="pl-s"><span class="pl-pds">"</span>/data/temp/webmagic/cache/<span class="pl-pds">"</span></span>))
+    .pipeline(<span class="pl-k">new</span> <span class="pl-smi">FilePipeline</span>())
+    .thread(<span class="pl-c1">10</span>)<span class="pl-k">.</span>run();  </pre></div>
+
+<p>Spider的核心处理流程非常简单，代码如下：</p>
+
+<div class="highlight highlight-java"><pre>    <span class="pl-k">private</span> <span class="pl-k">void</span> processRequest(<span class="pl-smi">Request</span> request) {
+        <span class="pl-smi">Page</span> page <span class="pl-k">=</span> downloader<span class="pl-k">.</span>download(request, <span class="pl-v">this</span>);
+        <span class="pl-k">if</span> (page <span class="pl-k">==</span> <span class="pl-c1">null</span>) {
+            sleep(site<span class="pl-k">.</span>getSleepTime());
+            <span class="pl-k">return</span>;
+        }
+        pageProcessor<span class="pl-k">.</span>process(page);
+        addRequest(page);
+        <span class="pl-k">for</span> (<span class="pl-smi">Pipeline</span> pipeline <span class="pl-k">:</span> pipelines) {
+            pipeline<span class="pl-k">.</span>process(page, <span class="pl-v">this</span>);
+        }
+        sleep(site<span class="pl-k">.</span>getSleepTime());
+    }</pre></div>
+
+<p>Spider还包括一个方法test(String url)，该方法只抓取一个单独的页面，用于测试抽取效果。</p>
+
+<h4><a id="user-content-pageprocessor页面分析及链接抽取" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#pageprocessor页面分析及链接抽取" aria-hidden="true"><span class="octicon octicon-link"></span></a>PageProcessor(页面分析及链接抽取)</h4>
+
+<p>页面分析是垂直爬虫中需要定制的部分。在webmagic-core里，通过实现<strong>PageProcessor</strong>接口来实现定制爬虫。PageProcessor有两个核心方法：public void process(Page page)和public Site getSite() 。</p>
+
+<ul>
+<li><p>public void process(Page page)</p>
+
+<p>通过对<strong>Page</strong>对象的操作，实现爬虫逻辑。Page对象包括两个最重要的方法：addTargetRequests()可以添加URL到待抓取队列，put()可以将结果保存供后续处理。
+Page的数据可以通过Page.getHtml()和Page.getUrl()获取。</p></li>
+<li><p>public Site getSite()</p>
+
+<p><strong>Site</strong>对象定义了爬虫的域名、起始地址、抓取间隔、编码等信息。</p></li>
+</ul>
+
+<p><strong>Selector</strong>是webmagic为了简化页面抽取开发的独立模块，是webmagic-core的主要着力点。这里整合了CSS Selector、XPath和正则表达式，并可以进行链式的抽取。</p>
+
+<div class="highlight highlight-java"><pre>    <span class="pl-c">//content是用别的爬虫工具抽取到的正文</span>
+    <span class="pl-k">List&lt;<span class="pl-smi">String</span>&gt;</span> links <span class="pl-k">=</span> page<span class="pl-k">.</span>getHtml()
+    <span class="pl-c1">.</span>$(<span class="pl-s"><span class="pl-pds">"</span>div.title<span class="pl-pds">"</span></span>)  <span class="pl-c">//css 选择，Java里虽然很少有$符号出现，不过貌似$作为方法名是合法的</span>
+    .xpath(<span class="pl-s"><span class="pl-pds">"</span>//@href<span class="pl-pds">"</span></span>)  <span class="pl-c">//提取链接</span>
+    .regex(<span class="pl-s"><span class="pl-pds">"</span>.*blog.*<span class="pl-pds">"</span></span>) <span class="pl-c">//正则匹配过滤</span>
+    .all(); <span class="pl-c">//转换为string列表</span></pre></div>
+
+<p>webmagic包括一个对于页面正文的自动抽取的类<strong>SmartContentSelector</strong>。相信用过Evernote Clearly都会对其自动抽取正文的技术印象深刻。这个技术又叫<strong>Readability</strong>。当然webmagic对Readability的实现还比较粗略，但是仍有一些学习价值。</p>
+
+<p>webmagic的XPath解析使用了作者另一个开源项目：基于Jsoup的XPath解析器<a href="https://github.com/code4craft/xsoup">Xsoup</a>，Xsoup对XPath的语法进行了一些扩展，支持一些自定义的函数。这些函数的使用方式都是在XPath末尾加上<code>/name-of-function()</code>，例如：<code>"//div[@class='BlogStat']/regex('\\d+-\\d+-\\d+\\s+\\d+:\\d+')"</code>。</p>
+
+<table>
+    <tbody><tr>
+        <td width="100">函数</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td width="100">text(n)</td>
+        <td>第n个文本节点(0表示取所有)</td>
+    </tr>
+        <tr>
+        <td width="100">allText()</td>
+        <td>包括子节点的所有文本</td>
+    </tr>
+    
+        <tr>
+        <td width="100">tidyText()</td>
+        <td>包括子节点的所有文本，并进行智能换行</td>
+    </tr>
+    <tr>
+        <td width="100">html()</td>
+        <td>内部html(不包括当前标签本身)</td>
+    </tr>
+    <tr>
+        <td width="100">outerHtml()</td>
+        <td>外部html(包括当前标签本身)</td>
+    </tr>
+    <tr>
+        <td width="100">regex(@attr,expr,group)</td>
+        <td>正则表达式，@attr是抽取的属性(可省略)，expr是表达式内容，group为捕获组(可省略，默认为0)</td>
+    </tr>
+</tbody></table>
+
+<p>基于Saxon，webmagic提供了XPath2.0语法的支持。XPath2.0语法支持内部函数、逻辑控制等，是一门完整的语言，如果你熟悉XPath2.0语法，倒是不妨一试(需要引入<strong>webmagic-saxon</strong>包)。</p>
+
+<p><strong>webmagic-samples</strong>包里有一些为某个站点定制的PageProcessor，供学习之用。</p>
+
+<h4><a id="user-content-downloader页面下载" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#downloader页面下载" aria-hidden="true"><span class="octicon octicon-link"></span></a>Downloader(页面下载)</h4>
+
+<p><strong>Downloader</strong>是webmagic中下载页面的接口，主要方法：</p>
+
+<ul>
+<li><p>public Page download(Request request, Task task) </p>
+
+<p><strong>Request</strong>对象封装了待抓取的URL及其他信息，而Page则包含了页面下载后的Html及其他信息。Task是一个包装了任务对应的Site信息的抽象接口。</p></li>
+<li><p>public void setThread(int thread)</p>
+
+<p>因为Downloader一般会涉及连接池等功能，而这些功能与多线程密切相关，所以定义了此方法。</p></li>
+</ul>
+
+<p>目前有几个Downloader的实现：</p>
+
+<ul>
+<li><p>HttpClientDownloader</p>
+
+<p>集成了<strong>Apache HttpClient</strong>的Downloader。Apache HttpClient(4.0后整合到HttpCompenent项目中)是强大的Java http下载器，它支持自定义HTTP头(对于爬虫比较有用的就是User-agent、cookie等)、自动redirect、连接复用、cookie保留、设置代理等诸多强大的功能。</p></li>
+<li><p>SeleniumDownloader</p>
+
+<p>对于一些Javascript动态加载的网页，仅仅使用http模拟下载工具，并不能取到页面的内容。这方面的思路有两种：一种是抽丝剥茧，分析js的逻辑，再用爬虫去重现它；另一种就是：内置一个浏览器，直接获取最后加载完的页面。<strong>webmagic-selenium</strong>包中整合了Selenium到SeleniumDownloader，可以直接进行动态加载页面的抓取。使用selenium需要安装一些native的工具，具体步骤可以参考作者的博文<a href="http://my.oschina.net/flashsword/blog/147334">使用Selenium来抓取动态加载的页面</a></p></li>
+</ul>
+
+<h4><a id="user-content-schedulerurl管理" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#schedulerurl管理" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scheduler(URL管理)</h4>
+
+<p><strong>Scheduler</strong>是webmagic的管理模块，通过实现Scheduler可以定制自己的URL管理器。Scheduler包括两个主要方法：</p>
+
+<ul>
+<li><p>public void push(Request request,Task task)</p>
+
+<p>将待抓取URL加入Scheduler。Request对象是对URL的一个封装，还包括优先级、以及一个供存储数据的Map。Task仍然用于区分不同任务，在多个任务公用一个Scheduler时可以此进行区分。</p></li>
+<li><p>public Request poll(Task task)</p>
+
+<p>从Scheduler里取出一条请求，并进行后续执行。</p></li>
+</ul>
+
+<p>webmagic目前有三个Scheduler的实现：</p>
+
+<ul>
+<li><p>QueueScheduler</p>
+
+<p>一个简单的内存队列，速度较快，并且是线程安全的。</p></li>
+<li><p>FileCacheQueueScheduler</p>
+
+<p>使用文件保存队列，它可以用于耗时较长的下载任务，在任务中途停止后(手动停止或者程序崩溃)，下次执行仍然从中止的URL开始继续爬取。</p></li>
+<li><p>RedisScheduler</p>
+
+<p>使用redis存储URL队列。通过使用同一台redis服务器存储URL，webmagic可以很容易的在多机部署，从而达到分布式爬虫的效果。</p></li>
+</ul>
+
+<h4><a id="user-content-pipeline后续处理和持久化" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#pipeline后续处理和持久化" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pipeline(后续处理和持久化)</h4>
+
+<p><strong>Pipeline</strong>是最终抽取结果进行输出和持久化的接口。它只包括一个方法：</p>
+
+<ul>
+<li><p>public void process(ResultItems resultItems,Task task)</p>
+
+<p><strong>ResultItems</strong>是集成了抽取结果的对象。通过ResultItems.get(key)可以获取抽取结果。Task同样是用于区分不同任务的对象。</p></li>
+</ul>
+
+<p>webmagic包括以下几个Pipeline的实现：</p>
+
+<ul>
+<li><p>ConsolePipeline</p>
+
+<p>直接输出结果到控制台，测试时使用。</p></li>
+<li><p>FilePipeline</p>
+
+<p>输出结果到文件，每个URL单独保存到一个页面，以URL的MD5结果作为文件名。通过构造函数<code>public FilePipeline(String path)</code>定义存储路径，<strong>以下使用文件持久化的类，多数都使用此方法指定路径</strong>。</p></li>
+<li><p>JsonFilePipeline</p>
+
+<p>以JSON输出结果到文件(.json后缀)，其他与FilePipeline相同。</p></li>
+</ul>
+
+<p>webmagic目前不支持持久化到数据库，但是结合其他工具，持久化到数据库也是很容易的。这里不妨看一下<a href="http://www.oschina.net/code/snippet_190591_23456">webmagic结合JFinal持久化到数据库的一段代码</a>。因为JFinal目前还不支持maven，所以这段代码并没有放到webmagic-samples里来。</p>
+
+<div></div>
+
+<hr>
+
+<h2><a id="user-content-webmagic-extension" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#webmagic-extension" aria-hidden="true"><span class="octicon octicon-link"></span></a>webmagic-extension</h2>
+
+<p>webmagic-extension是为了开发爬虫更方便而实现的一些功能模块。这些功能完全基于webmagic-core的框架，包括注解形式编写爬虫、分页、分布式等功能。</p>
+
+<h3><a id="user-content-注解模块" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#注解模块" aria-hidden="true"><span class="octicon octicon-link"></span></a>注解模块</h3>
+
+<p>webmagic-extension包括注解模块。为什么会有注解方式？</p>
+
+<p>因为PageProcessor的方式灵活、强大，但是没有解决两个问题：</p>
+
+<ul>
+<li>对于一个站点，如果想抓取多种格式的URL，那么必须在PageProcesser中写判断逻辑，代码难以管理。</li>
+<li>抓取结果没有对应Model，并不符合Java程序开发习惯，与一些框架也无法很好整合。</li>
+</ul>
+
+<p>注解的核心是Model类，本身是一个POJO，这个Model类用于传递、保存页面最终抓取结果数据。注解方式直接将抽取与数据绑定，以便于编写和维护。</p>
+
+<p>注解方式其实也是通过一个PageProcessor的实现--ModelPageProcessor完成，因此对webmagic-core代码没有任何影响。仍然以抓取OschinaBlog的程序为例：</p>
+
+<div class="highlight highlight-java"><pre>    @TargetUrl(<span class="pl-s"><span class="pl-pds">"</span>http://my.oschina.net/flashsword/blog/<span class="pl-cce">\\</span>d+<span class="pl-pds">"</span></span>)
+    <span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-en">OschinaBlog</span> {
+
+        <span class="pl-k">@ExtractBy</span>(<span class="pl-s"><span class="pl-pds">"</span>//title<span class="pl-pds">"</span></span>)
+        <span class="pl-k">private</span> <span class="pl-smi">String</span> title;
+
+        <span class="pl-k">@ExtractBy</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>div.BlogContent<span class="pl-pds">"</span></span>,<span class="pl-c1">type</span> <span class="pl-k">=</span> <span class="pl-smi">ExtractBy</span><span class="pl-k">.</span><span class="pl-smi">Type</span><span class="pl-k">.</span><span class="pl-smi">Css</span>)
+        <span class="pl-k">private</span> <span class="pl-smi">String</span> content;
+
+        <span class="pl-k">@ExtractBy</span>(<span class="pl-c1">value</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>//div[@class='BlogTags']/a/text()<span class="pl-pds">"</span></span>, <span class="pl-c1">multi</span> <span class="pl-k">=</span> <span class="pl-c1">true</span>)
+        <span class="pl-k">private</span> <span class="pl-k">List&lt;<span class="pl-smi">String</span>&gt;</span> tags;
+
+        <span class="pl-k">@Formatter</span>(<span class="pl-s"><span class="pl-pds">"</span>yyyy-MM-dd HH:mm<span class="pl-pds">"</span></span>)
+        <span class="pl-k">@ExtractBy</span>(<span class="pl-s"><span class="pl-pds">"</span>//div[@class='BlogStat']/regex('<span class="pl-cce">\\</span>d+-<span class="pl-cce">\\</span>d+-<span class="pl-cce">\\</span>d+<span class="pl-cce">\\</span>s+<span class="pl-cce">\\</span>d+:<span class="pl-cce">\\</span>d+')<span class="pl-pds">"</span></span>)
+        <span class="pl-k">private</span> <span class="pl-smi">Date</span> date; 
+
+        <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-k">void</span> <span class="pl-en">main</span>(<span class="pl-k">String</span>[] <span class="pl-v">args</span>) {
+            <span class="pl-smi">OOSpider</span><span class="pl-k">.</span>create(
+                <span class="pl-smi">Site</span><span class="pl-k">.</span>me()<span class="pl-k">.</span>addStartUrl(<span class="pl-s"><span class="pl-pds">"</span>http://my.oschina.net/flashsword/blog<span class="pl-pds">"</span></span>),
+                <span class="pl-k">new</span> <span class="pl-smi">ConsolePageModelPipeline</span>(), <span class="pl-smi">OschinaBlog</span><span class="pl-k">.</span>class)<span class="pl-k">.</span>run();
+        }
+    }</pre></div>
+
+<p>注解部分包括以下内容：</p>
+
+<ul>
+<li><h4><a id="user-content-targeturl" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#targeturl" aria-hidden="true"><span class="octicon octicon-link"></span></a>TargetUrl</h4>
+
+<p>"TargetUrl"表示这个Model对应要抓取的URL，它包含两层意思：符合这个条件的URL会被加入抓取队列；符合这个条件的URL会被这个Model抓取。TargetUrl可以<strong>sourceRegion</strong>指定提取URL的区域(仅支持XPath)。</p>
+
+<p>TargetUrl使用了正则表达式，匹配 "<a href="http://my.oschina.net/flashsword/blog/150039">http://my.oschina.net/flashsword/blog/150039</a>" 格式的URL。webmagic对正则表达式进行了修改，"."仅表示字符"."而不代表任意字符，而"*"则代表了".*"，例如"http://*.oschina.net/*"代表了oschina所有的二级域名下的URL。</p>
+
+<p>与TargetUrl相似的还有<strong>HelpUrl</strong>，HelpUrl表示：仅仅抓取该URL用作链接提取，并不对它进行内容抽取。例如博客正文页对应TargetUrl，而列表页则对应HelpUrl。</p></li>
+<li><h4><a id="user-content-extractby" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#extractby" aria-hidden="true"><span class="octicon octicon-link"></span></a>ExtractBy</h4>
+
+<ul>
+<li><h4><a id="user-content-用于字段" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#用于字段" aria-hidden="true"><span class="octicon octicon-link"></span></a>用于字段</h4>
+
+<p>"ExtractBy"可用于类以及字段。用于字段时，定义了字段抽取的规则。抽取的规则默认使用<a href="http://www.w3school.com.cn/xpath/"><strong>XPath</strong></a>，也可以选择使用CSS Selector、正则表达式(通过设置type)。</p>
+
+<p>ExtractBy还有几个扩展属性。<strong>multi</strong>表示是否抽取列表，当然，设置为multi时，你需要一个List字段去容纳它。<strong>notnull</strong>则表示，此字段不允许为null，若为null则放弃整个对象。</p></li>
+<li><h4><a id="user-content-用于类" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#用于类" aria-hidden="true"><span class="octicon octicon-link"></span></a>用于类</h4>
+
+<p>"ExtractBy"用于类时，则限定了字段抽取的区域。用于类时仍支持multi，multi则表示一个页面可以抽取到多个对象。</p></li>
+<li><h4><a id="user-content-extractbyurl" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#extractbyurl" aria-hidden="true"><span class="octicon octicon-link"></span></a>ExtractByUrl</h4>
+
+<p>ExtractByUrl表示从URL中抽取信息，只支持正则表达式。</p></li>
+<li><h4><a id="user-content-comboextract" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#comboextract" aria-hidden="true"><span class="octicon octicon-link"></span></a>ComboExtract</h4>
+
+<p>ComboExtract是对ExtractBy的一个补充，支持将对个抽取规则用and或者or的形式组合起来。</p></li>
+</ul></li>
+<li><h4><a id="user-content-类型转换" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#类型转换" aria-hidden="true"><span class="octicon octicon-link"></span></a>类型转换</h4>
+
+<p>webmagic的注解模式支持对抽取结果进行类型转换，这样抽取结果并不需要是String类型，而可以是任意类型。webmagic内置了基本类型的支持(需要保证抽取结果能够被转换到对应类型)。</p></li>
+</ul>
+
+<div class="highlight highlight-java"><pre>        @ExtractBy(<span class="pl-s"><span class="pl-pds">"</span>//ul[@class='pagehead-actions']/li[1]//a[@class='social-count js-social-count']/text()<span class="pl-pds">"</span></span>)
+        <span class="pl-k">private</span> <span class="pl-k">int</span> star;</pre></div>
+
+<p>抽取结果也可以是<code>java.util.Date</code>类型，不过需要指定日期格式化的方式：</p>
+
+<div class="highlight highlight-java"><pre>        @Formatter(<span class="pl-s"><span class="pl-pds">"</span>yyyy-MM-dd HH:mm<span class="pl-pds">"</span></span>)
+        @ExtractBy(<span class="pl-s"><span class="pl-pds">"</span>//div[@class='BlogStat']/regex('<span class="pl-cce">\\</span>d+-<span class="pl-cce">\\</span>d+-<span class="pl-cce">\\</span>d+<span class="pl-cce">\\</span>s+<span class="pl-cce">\\</span>d+:<span class="pl-cce">\\</span>d+')<span class="pl-pds">"</span></span>)
+        <span class="pl-k">private</span> <span class="pl-smi">Date</span> date;</pre></div>
+
+<p>你也可以编写一个实现<code>ObjectFormatter</code>接口的类，进行自己的类型解析。要使用自己的类，需要调用<code>ObjectFormatters.put()</code>对这个类进行注册。</p>
+
+<ul>
+<li><h4><a id="user-content-afterextractor" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#afterextractor" aria-hidden="true"><span class="octicon octicon-link"></span></a>AfterExtractor</h4>
+
+<p>AfterExtractor接口是对注解方式抽取能力不足的补充。实现AfterExtractor接口后，会在<strong>使用注解方式填充完字段后</strong>调用<strong>afterProcess()</strong>方法，在这个方法中可以直接访问已抽取的字段、补充需要抽取的字段，甚至做一些简单的输出和持久化操作(并不是很建议这么做)。这部分可以参考<a href="http://www.oschina.net/code/snippet_190591_23456">webmagic结合JFinal持久化到数据库的一段代码</a>。</p></li>
+<li><h4><a id="user-content-oospider" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#oospider" aria-hidden="true"><span class="octicon octicon-link"></span></a>OOSpider</h4>
+
+<p>OOSpider是注解式爬虫的入口，这里调用<strong>create()</strong>方法将OschinaBlog这个类加入到爬虫的抽取中，这里是可以传入多个类的，例如：</p></li>
+</ul>
+
+<div class="highlight highlight-java"><pre>        <span class="pl-smi">OOSpider</span><span class="pl-k">.</span>create(
+            <span class="pl-smi">Site</span><span class="pl-k">.</span>me()<span class="pl-k">.</span>addStartUrl(<span class="pl-s"><span class="pl-pds">"</span>http://www.oschina.net<span class="pl-pds">"</span></span>),
+            <span class="pl-k">new</span> <span class="pl-smi">ConsolePageModelPipeline</span>(),
+            <span class="pl-smi">OschinaBlog</span><span class="pl-k">.</span>clas,<span class="pl-smi">OschinaAnswer</span><span class="pl-k">.</span>class)<span class="pl-k">.</span>run();</pre></div>
+
+<pre><code>OOSpider会根据TargetUrl调用不同的Model进行解析。
+</code></pre>
+
+<ul>
+<li><h4><a id="user-content-pagemodelpipeline" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#pagemodelpipeline" aria-hidden="true"><span class="octicon octicon-link"></span></a>PageModelPipeline</h4>
+
+<p>可以通过定义PageModelPipeline来选择结果输出方式。这里new ConsolePageModelPipeline()是PageModelPipeline的一个实现，会将结果输出到控制台。</p>
+
+<p>PageModelPipeline目前包括<code>ConsolePageModelPipeline</code>、<code>JsonFilePageModelPipeline</code>、<code>FilePageModelPipeline</code>三个实现。</p></li>
+<li><h4><a id="user-content-分页" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#分页" aria-hidden="true"><span class="octicon octicon-link"></span></a>分页</h4>
+
+<p>处理单项数据分页(例如单条新闻多个页面)是爬虫一个比较头疼的问题。webmagic目前对于分页的解决方案是：在注解模式下，Model通过实现<strong>PagedModel</strong>接口，并引入PagedPipeline作为第一个Pipeline来实现。具体可以参考�webmagic-samples中抓取网易新闻的代码：<strong>us.codecraft.webmagic.model.samples.News163</strong>。</p>
+
+<p>关于分页，这里有一篇对于webmagic分页实现的详细说明的文章<a href="http://my.oschina.net/flashsword/blog/150039">关于爬虫实现分页的一些思考</a>。
+目前分页功能还没有分布式实现，如果实现RedisScheduler进行分布式爬取，请不要使用分页功能。</p></li>
+</ul>
+
+<h3><a id="user-content-分布式" class="anchor" href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#分布式" aria-hidden="true"><span class="octicon octicon-link"></span></a>分布式</h3>
+
+<p>webmagic-extension中，通过redis来管理URL，达到分布式的效果。但是对于分布式爬虫，仅仅程序能够分布式运行，还满足不了大规模抓取的需要，webmagic可能后期会加入一些任务管理和监控的功能，也欢迎各位用户为webmagic提交代码，做出贡献。</p>
+</article>
+  </div>
+
+</div>
+
+<a href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#jump-to-line" rel="facebox[.linejump]" data-hotkey="l" style="display:none">Jump to Line</a>
+<div id="jump-to-line" style="display:none">
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+    <input class="linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line…" aria-label="Jump to line" autofocus="">
+    <button type="submit" class="btn">Go</button>
+</form></div>
+
+          </div>
+        </div>
+        <div class="modal-backdrop"></div>
+      </div>
+  </div>
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com/" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com/" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+        <li><a href="https://help.github.com/" data-ga-click="Footer, go to help, text:help">Help</a></li>
+
+    </ul>
+
+    <a href="https://github.com/" aria-label="Homepage">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+</a>
+    <ul class="site-footer-links">
+      <li>© 2015 <span title="0.07139s from github-fe124-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-suggester-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="fullscreen-contents js-fullscreen-contents" placeholder="" aria-label=""></textarea>
+      <div class="suggester-container">
+        <div class="suggester fullscreen-suggester js-suggester js-navigation-container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w" aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    
+    
+    
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="https://github.com/code4craft/webmagic/blob/master/user-manual.md#" class="octicon octicon-x flash-close js-ajax-error-dismiss" aria-label="Dismiss error"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      <script crossorigin="anonymous" src="./webmagic_user-manual.md at master · code4craft_webmagic_files/frameworks-f2cb750ff18baf4484f1f3d872019c51964030f451d1896031c4855ee4380d5c.js"></script>
+      <script async="async" crossorigin="anonymous" src="./webmagic_user-manual.md at master · code4craft_webmagic_files/index-2c3b28fb3ba2bddd68f333b8bb58c839e9ebaaecd68e845d191e31d3c6c8179b.js"></script>
+      
+      
+  
+
+
+    <div class="facebox" id="facebox" style="display:none;">       <div class="facebox-popup">         <div class="facebox-content">         </div>         <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">           <span class="octicon octicon-remove-close"></span>         </button>       </div>     </div></body></html>
