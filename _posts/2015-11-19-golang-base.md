@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "golang base基础－常量与变量"
+title: "golang基础－常量与变量"
 description: ""
 category: "go"
 tags: []
