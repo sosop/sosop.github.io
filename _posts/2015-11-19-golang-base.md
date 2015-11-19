@@ -2,7 +2,7 @@
 layout: post
 title: "golang base基础－常量与变量"
 description: ""
-category: 
+category: "go"
 tags: []
 ---
 {% include JB/setup %}
