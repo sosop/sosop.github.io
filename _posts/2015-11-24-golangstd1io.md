@@ -2,7 +2,7 @@
 layout: post
 title: "golang标准库io"
 description: ""
-category: 
+category: "go"
 tags: []
 ---
 {% include JB/setup %}
