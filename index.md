@@ -18,3 +18,5 @@ Blog记录生活的色彩、技术的感悟。
 > 遇到的每一个人，看过的每一片风景，发生的每一个故事，遭遇的每一个苦难，都是带着某种使命走进你的生活的，让你变成一个更好的自己。世间万物都是时间的函数。 
 
 > The future is already here—it’s just not evenly distributed.
+
+> <a href="http://www.playhot.club" target="_blank">个人网站（开发中...）</a>
